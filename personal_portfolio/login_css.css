@@ -1,0 +1,111 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Consolas;
+}
+
+body {
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+    section .color {
+        position: relative;
+        filter: blur(200px);
+    }
+
+        section .color:nth-child(1) {
+            top: -350px;
+            width: 600px;
+            height: 600px;
+            background: red;
+        }
+
+        section .color:nth-child(2) {
+            bottom: -150px;
+            left: 100px;
+            width: 800px;
+            height: 800px;
+            background: orange;
+        }
+
+        section .color:nth-child(3) {
+            bottom: 50px;
+            left: -100px;
+            height: 600px;
+            width: 600px;
+            background: blue;
+        }
+
+.box {
+    position: absolute;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    min-height: 500px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    margin-top: -150px;
+}
+
+.form {
+    position: relative;
+    width: 100px;
+    height: 400px;
+    padding: 40px;
+    margin-top: -20px;
+}
+
+    .form h2 {
+        position: relative;
+        color: black;
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+    }
+
+        .form h2::before {
+            content: '';
+            position: absolute;
+            left: 0px;
+            bottom: -10px;
+            width: 80px;
+            height: 4px;
+            background: black;
+        }
+
+    .form .inputbox {
+        width: 450px;
+        margin-top: 20px;
+    }
+
+.style {
+    width: 104px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    color: black;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.padd {
+}
